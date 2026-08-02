@@ -4,21 +4,21 @@ pepperoni = input("Do you want pepperoni on your pizza? Y or N: ")
 extra_cheese = input("Do you want extra cheese? Y or N: ")
 
 bill = 0
-if size == "S":
+if size == "S" or size=="s":
     bill += 15
-elif size == "M":
+elif size == "M" or size=="m":
     bill += 20
-elif size == "L":
+elif size == "L" or size=="l":
     bill += 25
 else :
     print("Sorry you have to enter incorrect wording.")
-if pepperoni == "Y":
-    if size == "S":
+if pepperoni == "Y" or size=="y":
+    if size == "S" or size=="s":
         bill += 2
     else:
         bill += 3
 
-if extra_cheese == "Y":
+if extra_cheese == "Y" or size=="y":
     bill += 1
 
 print(f"Your final bill is: ${bill}.")
